@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Search</title>
+
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                color: #202124;
+            }
+
+            .actions {
+                display: flex;
+                justify-content: flex-end;
+                padding: 20px 24px;
+            }
+
+            .actions a {
+                color: #1a73e8;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            form {
+                padding-top: 100px;
+            }
+
+            .textboxes {
+                display: flex;
+                justify-content: center;
+            }
+
+            .textboxes input[type="text"] {
+                box-sizing: border-box;
+                width: min(500px, 90%);
+                height: 44px;
+                padding: 0 18px;
+                border: 1px solid #dfe1e5;
+                border-radius: 24px;
+                font-size: 16px;
+            }
+
+            .textboxes input[type="text"]:focus {
+                outline: none;
+                box-shadow: 0 1px 6px #0003;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: center;
+                margin-top: 24px;
+            }
+
+            .buttons input[type="submit"] {
+                padding: 10px 16px;
+                border: 1px solid #dadce0;
+                border-radius: 4px;
+                background: #f8f9fa;
+                color: #3c4043;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="actions">
+            <a href="index.html">Google Search</a>
+        </div>
+
+        <form action="https://www.google.com/search">
+            <div class="textboxes">
+                <input type="text" id="txtbx1" name="q" autocomplete="off">
+                <input type="hidden" name="udm" value="2">
+            </div>
+
+            <div class="buttons">
+                <input type="submit" id="submit_results" value="Google Image Search">
+            </div>
+        </form>
+    </body>
+</html>
