@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+<body class="text-dark" style="font-family: Arial, sans-serif;">
+
+    <div class="d-flex justify-content-end p-4">
+        <a href="index.html" class="text-decoration-none text-primary fs-6">
+            Google Search
+        </a>
+    </div>
+
+    <form action="https://www.google.com/search" class="pt-5 mt-5">
+
+        <div class="d-flex justify-content-center">
+            <input type="text" id="txtbx1" name="q"
+                   autocomplete="off"
+                   class="form-control rounded-pill px-4"
+                   style="width: min(500px, 90%); height: 44px;">
+
+            <input type="hidden" name="udm" value="2">
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+            <input type="submit" id="submit_results"
+                   value="Google Image Search"
+                   class="btn btn-light border text-secondary px-3 py-2">
+        </div>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+<body>
+
+    <div class="container-fluid p-4">
+
+        <div class="d-flex justify-content-end mb-4">
+            <a href="index.html" class="text-decoration-none">
+                Google Search
+            </a>
+        </div>
+
+        <h1 class="mb-4">Advanced Search</h1>
+
+        <h5 class="mb-4">Find pages with</h5>
+
+        <form action="https://www.google.com/search">
+
+            <div class="row align-items-center g-3 mb-3">
+
+                <div class="col-md-3">
+                    <label for="All_these_words" class="form-label mb-0">
+                        All these words
+                    </label>
+                </div>
+
+                <div class="col-md-9">
+                    <input type="text" class="form-control"
+                           id="All_these_words" name="as_q"
+                           autocomplete="off">
+                </div>
+
+                <div class="col-md-3">
+                    <label for="exact_phrase" class="form-label mb-0">
+                        The exact word or phrase
+                    </label>
+                </div>
+
+                <div class="col-md-9">
+                    <input type="text" class="form-control"
+                           id="exact_phrase" name="as_epq"
+                           autocomplete="off">
+                </div>
+
+                <div class="col-md-3">
+                    <label for="Any_of_these_words" class="form-label mb-0">
+                        Any of these words
+                    </label>
+                </div>
+
+                <div class="col-md-9">
+                    <input type="text" class="form-control"
+                           id="Any_of_these_words" name="as_oq"
+                           autocomplete="off">
+                </div>
+
+                <div class="col-md-3">
+                    <label for="None_of_these_words" class="form-label mb-0">
+                        None of these words
+                    </label>
+                </div>
+
+                <div class="col-md-9">
+                    <input type="text" class="form-control"
+                           id="None_of_these_words" name="as_eq"
+                           autocomplete="off">
+                </div>
+
+                <div class="col-12 mt-3">
+                    <button type="submit" class="btn btn-primary">
+                        Advanced Search
+                    </button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
